@@ -94,11 +94,4 @@ sysctl -w net.core.somaxconn=4096
 
 线程池优化业务处理
 
-参考
-Linux man pages
-
-Beej's Guide to Network Programming
-
-Epoll 详解
-
 欢迎 Star ⭐ 或 Fork 本仓库，一起交流学习！
