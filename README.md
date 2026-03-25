@@ -32,15 +32,15 @@
 ## 目录结构
 
 - 01-single-thread-blocking/
-   - tcp_server.cpp # 单线程阻塞版本
+  - tcp_server.cpp # 单线程阻塞版本
 - 02-multithread/
-   - tcp_server.cpp # 多线程版本（每连接一线程）
+  - tcp_server.cpp # 多线程版本（每连接一线程）
 - 03-epoll-lt/
-   - tcp_server.cpp # epoll 水平触发
+  - tcp_server.cpp # epoll 水平触发
 - 04-epoll-et/
-   - tcp_server.cpp # epoll 边缘触发 + 非阻塞
+  - tcp_server.cpp # epoll 边缘触发 + 非阻塞
 - 05-multithread-epoll/
-   - tcp_server.cpp # 多线程 epoll（Reactor）
+  - tcp_server.cpp # 多线程 epoll（Reactor）
 - Project Diary
 - README.md
 
