@@ -53,24 +53,27 @@ text
 cd 03-epoll-lt
 g++ tcp_server.cpp -o tcp_server
 ./tcp_server
+```
 测试连接：
 
-bash
+```bash
 telnet 127.0.0.1 8080
 压测示例（需安装 wrk 或 ab）：
-
-bash
+```
+```bash
 # 使用 ab 发送 10000 个请求，并发 1000
 ab -n 10000 -c 1000 http://127.0.0.1:8080/
 
 # 使用 wrk 4 线程，1000 并发，持续 30 秒
 wrk -t4 -c1000 -d30s http://127.0.0.1:8080/
+```
 关键系统调优参数
-bash
+```bash
 ulimit -n 65535
 sysctl -w net.ipv4.tcp_tw_reuse=1
 sysctl -w net.ipv4.ip_local_port_range="1024 65000"
 sysctl -w net.core.somaxconn=4096
+```
 收获与总结
 理解 TCP 三次握手、四次挥手在代码中的体现
 
